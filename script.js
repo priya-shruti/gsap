@@ -1,21 +1,15 @@
-var tl = gsap.timeline();
-
-tl.from("h2", {
-  y: -20,
+gsap.from("#page2 #box", {
+  scale: 0,
   opacity: 0,
+  rotate: 720,
   duration: 1,
-  delay: 0.5,
-});
-
-tl.from("h4", {
-  y: -20,
-  opacity: 0,
-  duration: 1,
-  stagger: 0.3,
-});
-tl.from("h1", {
-  y: 20,
-  opacity: 0,
-  duration: 0.5,
-  scale: 0.2,
+  scrollTrigger: {
+    trigger: "#page2 #box",
+    scroller: "body",
+    markers: true,
+    start: "top 60%",
+    end: "top 30%",
+    scrub: 2,
+    pin: true,
+  },
 });

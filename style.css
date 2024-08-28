@@ -13,37 +13,46 @@ body {
 body {
   background-color: #111;
 }
-/* #box1 {
-  height: 300px;
-  width: 300px;
-  background-color: crimson;
-}
-#box2 {
-  height: 300px;
-  width: 300px;
-  background-color: lightseagreen;
-}
-#box3 {
-  height: 300px;
-  width: 300px;
-  background-color: royalblue;
-} */
-#nav {
-  /* background-color: red; */
+
+#page1 {
+  height: 100%;
+  width: 100%;
+  background-color: lightblue;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 30px 50px;
+  justify-content: center;
 }
-#part2 {
+#page2 {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(39, 156, 248);
   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   gap: 50px;
 }
+#page3 {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(8, 130, 191);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#box {
+  height: 300px;
+  width: 300px;
+  background: crimson;
+}
 h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 80px;
-  white-space: no-wrap;
+  font-size: 60px;
+  position: relative;
+  background-color: red;
+  padding: 10px;
+}
+h2 {
+  font-size: 60px;
+  position: relative;
+  background-color: yellow;
 }
